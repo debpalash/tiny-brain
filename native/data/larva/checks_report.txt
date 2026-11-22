@@ -1,0 +1,71 @@
+== totals (paper: ~3,016 neurons, ~548,000 synapses)
+neurons 3016 | connected pairs 107388 | total synapses (sum of count) 337264
+type sums: {'axon_dendrite': 223368, 'axon_axon': 89617, 'dendrite_dendrite': 18510, 'dendrite_axon': 5769}
+duplicate skeleton ids 0 | index dense 0..n-1: True
+self-connections (pairs / synapses) 528 757
+duplicate (pre,post) rows 0
+rows where count != sum of types 0
+== degree (distinct partners / synapse totals)
+out-degree: min 0 median 31.0 mean 35.6 p90 74 p99 114 max 150 zeros 96
+in-degree: min 0 median 30.0 mean 35.6 p90 73 p99 128 max 208 zeros 90
+out-synapses: min 0 median 86.0 mean 111.8 p90 242 p99 508 max 761 zeros 96
+in-synapses: min 0 median 76.0 mean 111.8 p90 250 p99 607 max 1612 zeros 90
+isolated neurons (no in or out edges, self excluded): 29
+== broad classes (total / left / right)
+unclassified                       1170   586   584
+sensory                             434   212   222
+lateral horn neuron                 255   127   128
+Kenyon cell                         222   109   113
+descending to VNC                   176    88    88
+descending to SEZ                   166    83    83
+convergence neuron                  152    76    76
+projection neuron                    80    40    40
+MB feedforward (FFN)                 58    29    29
+local neuron                         51    25    26
+ring gland                           48    24    24
+MBON                                 48    24    24
+ascending                            40    20    20
+MB feedback-to-feedback (FB2N)       32    16    16
+MBIN                                 26    13    13
+MB feedback (FBN)                    26    13    13
+LON                                  10     5     5
+MB feedback-to-anything (FAN)         8     4     4
+A00c                                  6     3     3
+descending unknown                    6     3     3
+APL                                   2     1     1
+== sensory modality
+Counter({'somatosensory (external)': 96, 'enteric': 85, 'gustatory (pharyngeal)': 64, 'gustatory (external)': 58, 'olfactory': 42, '(none)': 30, 'visual': 29, 'mechanosensory (pharyngeal)': 17, 'thermosensory': 13})
+== mushroom-body pathway pieces, per hemisphere
+ORN          total   42 left   21 right   21
+PN (all)     total   80 left   40 right   40
+  uPN        total   40 left   20 right   20
+KC           total  222 left  109 right  113
+MBON         total   48 left   24 right   24
+MBIN (all)   total   26 left   13 right   13
+  DAN        total   14 left    7 right    7
+  OAN        total    2 left    1 right    1
+APL          total    2 left    1 right    1
+== pathway edges (pairs, synapses)
+ORN->PN  (354, 5656)
+ORN->uPN (156, 3535)
+PN->KC   (648, 3680)
+KC->MBON (3053, 17778)
+MBIN->KC (1640, 4697)
+MBIN->MBON (142, 1758)
+DAN->KC  (1212, 3714)
+DAN->MBON (74, 1111)
+KC->KC   (7230, 16405)
+MBON->MBIN (124, 397)
+ORN->any (869, 12433)
+PN->any (5022, 20759)
+== coverage
+transmitter known: 463 of 3016 Counter({'acetylcholine': 370, 'GABA': 42, 'glutamate': 26, 'dopamine': 14, 'conflict:GABA/glutamate': 8, 'octopamine': 2, 'conflict:acetylcholine/glutamate': 1})
+transmitter conflicts: 9
+  transmitter known in KC: 222 of 222
+  transmitter known in MBON: 32 of 48
+  transmitter known in MBIN: 16 of 26
+positions present: 3016 missing: 0 Counter({'soma_tag': 2574, 'skeleton_root': 434, 'soma_tag(first of 2)': 7, 'soma_tag(first of 3)': 1})
+hemisphere: Counter({'right': 1515, 'left': 1501})
+with left/right partner: 972 Counter({'hemilateral': 762, 'mw paired (ds mPNs)': 210})
+mean soma x for left: 81538 nm (n=1289)
+mean soma x for right: 25056 nm (n=1293)
